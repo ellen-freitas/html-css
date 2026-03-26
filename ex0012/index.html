@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+
+    <style>
+        body
+        {
+            background-color: rgba(240, 152, 196, 0.645);
+        }
+    </style>
+
+    <style>
+    .video-link {
+      display: inline-block;
+      position: relative;
+    }
+
+    .video-thumb {
+      width: 560px;
+      max-width: 100%;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .video-link::after {
+      content: "▶";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 64px;
+      color: white;
+      text-shadow: 0 0 10px black;
+      pointer-events: none;
+    }
+  </style>
+
+
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+
+    <video width="600" height="300" src="midia/meuvideo.mp4"></video>
+   
+    <h1>Inserindo vídeos do vimeo </h1>
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/219245372?h=da3e749d08" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
+
+    <br>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+
+<a href="https://youtu.be/3hng-hmSv2Y" target="_blank" class="video-link">
+  <img 
+    src="https://img.youtube.com/vi/3hng-hmSv2Y/hqdefault.jpg"
+    alt="Assistir vídeo no YouTube"
+    class="video-thumb">
+</a>
+
+
+ 
+</body>
+</html>
